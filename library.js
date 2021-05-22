@@ -23,6 +23,8 @@ function addBookToLibrary() {
         localStorage.setItem("myLibraryStorage", JSON.stringify(myLibrary));
         setup_view(newBook);
         clearBookInfo();
+    } else {
+        alert("Fill all fields");
     }
 }
 
