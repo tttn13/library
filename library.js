@@ -26,6 +26,7 @@ function addBookToLibrary() {
         myLibrary.push(newBook);
         console.log(myLibrary);
         persistToStorage();
+        setup_view(newBook)
     } else {
         alert("Fill all fields");
     }
